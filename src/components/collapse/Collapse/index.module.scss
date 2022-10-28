@@ -1,0 +1,32 @@
+.collapse {
+  @apply p-4 mt-4 h-56;
+
+  &__btn {
+    @apply py-4 px-6 w-48 text-xl text-white font-medium bg-teal-500 rounded-md shadow-md hover:bg-teal-700 transition-colors;
+  }
+
+  &__content {
+    @apply p-4 mt-4 border-2 rounded-md text-gray-800;
+  }
+}
+
+.expand-enter {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.expand-enter-active {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.expand-exit {
+  opacity: 1;
+}
+
+.expand-exit-active {
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
